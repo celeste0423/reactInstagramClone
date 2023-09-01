@@ -1,0 +1,14 @@
+.homepage{
+    /* flex하게 표현하려면 이렇게 */
+    display: flex;
+    flex-direction: row;
+}
+
+/* flex의 비율은 아래와 같이 추가 */
+.homepage__nav{
+    flex: 0.2;
+}
+
+.homepage__timeline{
+    flex: 0.8;
+}

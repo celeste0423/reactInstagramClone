@@ -1,0 +1,49 @@
+.sidenav {
+  /* 위치 고정하기 위해서는 position fixed여야함 */
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.sidenav__logo {
+  width: 120px;
+  margin: 25px;
+}
+
+.sidenav__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background: 0;
+  border: 0;
+  margin: 5px 10px 5px 10px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.sidenav__button:hover {
+  /* 마우스를 위에 올렸을 때의 상태 -> hover 이외에 active, focus 등*/
+  cursor: pointer; /* 커서의 모양을 손가락 모양(pointer)로  */
+  background-color: rgba(255, 255, 255, 0.128);
+}
+
+.sidenav__button > span {
+  /* sidenav__button이라는 것 안의 span에만 효과를 적용하고 싶을 때 내부의 라는 뜻의 > 사용 */
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.sidenav__more {
+  position: fixed; /* 요소를 뷰포트에 고정된 위치에 배치 */
+  bottom: 3px; /* 요소의 아래쪽 가장자리가 뷰포트 아래에서 3픽셀 떨어져 있음 */
+}
